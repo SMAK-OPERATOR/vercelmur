@@ -1,0 +1,32 @@
+.titleText {
+    font-family: Aubrey Pro;
+    font-size: 26px;
+    color:#73A7DA;
+}
+
+#bodyMargins{
+    margin: 0;
+}
+
+a{
+    text-decoration: none
+}
+
+
+a:hover {
+    color: #1073D8
+}
+
+
+a:visited {
+    color:#73A7DA;
+    text-decoration: none
+}
+
+
+
+
+
+
+
+
