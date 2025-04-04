@@ -1,32 +1,517 @@
-.titleText {
-    font-family: Aubrey Pro;
-    font-size: 26px;
-    color:#73A7DA;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #FCFDFF 0%, #FFF2FC 50%, #FCFDFF 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#bodyMargins{
-    margin: 0;
+.header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url('Главная/top.png') no-repeat;
+   background-size: 100%;
+   height: 134px;
+   width: 100%;
+}
+
+.nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 4vh;
+}
+
+.nav p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   font-size: 20px;
+   color: #4D0F98;
+   width: 160px;
+   margin: 0;
+}
+
+.welcome {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.welcome-title {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 0;
+   color: #B292F6;
+   font-family: 'Oswald', sans-serif;
+   font-size: 64px;
+   justify-content: start;
+}
+
+.welcome-subtitle {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 0;
+   color: #4D0F98;
+   font-family: 'Oswald', sans-serif;
+   font-size: 64px;
+   justify-content:flex-end;
+}
+
+.about-me {
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   margin-top: 72px; 
+   background:url('Главная/Меня зовут.png') no-repeat; 
+   height:640px;
+   width: 100%;
+}
+.about-me-content{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   width: 70%;
+}
+.my-photo {
+   display: flex;
+   width: 328px;
+   height: 420px;
+   border-radius: 30px;
+   margin-left: 15%;
+}
+.about-text {
+   display: flex;
+   flex-direction: column;
+   color:#4D0F98; 
+   font-size:36px; 
+   margin-left:auto;
+   width: 45%;
+   justify-content:flex-end;
+}
+
+.about-text p{
+   margin: 0;
+}
+
+.technologies {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   margin-top: 100px; 
+   margin-left: 10%;
+}
+.technologies-title {
+   display: flex;
+   color:#4D0F98; 
+   font-family:'Oswald', sans-serif; 
+   font-size:64px; 
+}
+.tech-blocks {  
+   display:flex;
+   flex-direction: row;
+}
+.tech-block {  
+   display:flex;  
+   align-items:center;
+}
+.tech-icons {  
+   display:flex;  
+   flex-direction:column;
+   height: 395px;
+}
+
+.tech-icon {
+   margin-bottom: 50px;
+}
+
+.large-image {  
+   margin-left: 36px;
+   height:355px;  
+}
+
+.projects-section {  
+   margin-top:100px;
+   display: flex;
+   background:url('Главная/фон проекты.png') no-repeat;   
+   width: 1502px;
+   height: 3180px;
+   flex-direction: column;
+}
+.projects-title {  
+   display: flex;
+   margin-left: 5%;
+   margin-top: 40px;
+   margin-bottom: 0;
+   color:#4D0F98;  
+   font-family:'Oswald', sans-serif;  
+   font-size:64px;
+}
+.left-project-card {  
+   display:flex;
+   flex-direction: row;
+   margin-top: 40px;
+}
+.project-image {  
+   display: flex;
+   margin-left: 5%;
+   border-radius:30px;
+   height: 451px;
+   outline: #ED139E solid 2px;
+}
+.project-text { 
+   text-align:center;   
+   flex-direction: column;
+   align-items: center;
+   margin-left: 135px;
+   width: 447px;
+}
+.project-title{
+   font-weight: 600;
+   color:#4D0F98;
+   font-size: 48px;
+   margin: 0;
+}
+.project-description{
+   color: #B292F6;
+   font-size: 24px;
+}
+.arrow-text{
+   font-weight: 600;
+   margin-top: 232px;
+   color:#4D0F98;
+   margin-bottom: 0;
+   font-size: 24px;
+}
+
+.right-project-card {  
+   margin-left: 4%;
+   display:flex;
+   flex-direction: row;
+   margin-top: 40px;
+   height: 381px;
+}
+.right-project-image {  
+   display: flex;
+   border-radius:30px;
+   margin-left: 135px;
+   height: 381px;
+   border: #ED139E solid 2px;
+}
+.right-project-text { 
+   text-align:center;   
+   flex-direction: column;
+   align-items: center;
+   width: 447px;
+}
+.right-project-title{
+   font-weight: 600;
+   color:#4D0F98;
+   font-size: 48px;
+   margin: 0;
+}
+.right-project-description{
+   color: #B292F6;
+   font-size: 24px;
+}
+.right-arrow-text{
+   font-weight: 600;
+   margin-top: 156px;
+   color:#4D0F98;
+   margin-bottom: 0;
+   font-size: 24px;
+}
+
+.footer {   
+   background:url('Главная/Подвал.png') no-repeat;   
+   height:768px;   
+   display:flex;   
+   justify-content :space-between ;   
+   margin-top: 300px;
+   width: 100%;
+   flex-direction: row;
+} 
+
+.contacts-left{
+   margin-left: 15%;
+   margin-top: 6%;
+   display: flex;
+   flex-direction: column;
+   width: 440px;
+}
+
+.footer-title{
+   font-family:'Oswald', sans-serif;  
+   font-size: 48px;
+   color: #FF9ED8;
+}
+
+.footer-text{
+font-size: 24px;
+   color: #D9CDF2;
+   margin-left: 34px;
+}
+
+.contact{
+   display: flex;
+   justify-content: left;   
+   align-items: center;
+   margin-top: 50px;
+}
+
+.contacts-right{
+   margin-top: 6%;
+   display: flex;
+   flex-direction: column;
+   margin-right: 15%;
+   margin-left: 110px;
+}
+
+.footer-description{
+   font-size: 40px;
+   color: #FF9ED8;
+}
+
+.first-inputs{
+   display: flex;
+   flex-direction: row;
+   margin-left: 0;
+}
+
+.inputtext{
+   margin-top: 20px;
+   background-color: rgba(0, 0, 0, 0.0);
+   font-size: 24px;
+   color: #B292F6;
+   border: none;
+   border-bottom: 2px solid #FF9ED8;
+   outline: none;
+   padding-bottom: 10px;
+}
+
+.inputtext::placeholder {
+   color: #D9CDF2;
+   opacity: 1;
+}
+
+.submit-button {
+   margin-top: 50px;
+   font-weight: 600;
+   height: 55px; /* Высота кнопки */
+   background-color: #D9CDF2; /* Обычный фон */
+   color: #27074D; /* Цвет текста */
+   border: none; /* Убираем границы */
+   border-radius: 30px; /* Скругление углов */
+   font-size: 24px; /* Размер шрифта */
+   cursor: pointer; /* Курсор при наведении */
+   transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+
+.submit-button:hover {
+   background-color: #B292F6; /* Фон при наведении */
+}
+
+.submit-button:active {
+   background-color: #4D0F98; /* Фон при нажатии */
+   color: #B292F6; /* Цвет текста при нажатии */
+}
+
+.submit-button.clicked {
+   background-color: #D9CDF2; /* Обычный фон */
+   color: #27074D; /* Цвет текста */
+}
+
+.scroll-to-top {
+   position: fixed; /* Фиксированное положение */
+   right: 70px; /* Отступ от правого края */
+   bottom: 100px; /* Отступ от нижнего края */
+
+   display: none; /* Скрываем элемент по умолчанию */
+   z-index: 1000; /* Устанавливаем высокий z-index, чтобы элемент был поверх других */
+}
+
+.scroll-to-top img {
+   width: 50px; /* Ширина изображения */
+   height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.scroll-to-top:hover img {
+   content: url('Главная/Arrow\ up\ 2.png'); /* Изображение при наведении */
+}
+
+.scroll-to-top:active img {
+   content: url('Главная/Arrow\ up\ 3.png'); /* Изображение при нажатии */
+}
+
+.scroll-section {
+   cursor: pointer;
+}
+
+.scroll-section:hover {
+   color: #B292F6; /* Цвет при наведении */
+}
+
+.scroll-section:active {
+   color: #27074D; /* Цвет при нажатии */
+}
+
+.arrow{
+   cursor: pointer;
+}
+
+.arrow:hover{
+   content: url('Главная/Arrow2.png');
+}
+
+.arrow:active{
+   content: url('Главная/Arrow3.png');
+}
+
+.links{
+   display: flex;
+   flex-direction: row;
+   width: 70%;
+   margin: 0;
+   margin-top: 100px;
+}
+
+.link{
+   display: flex;
+   flex-direction: column;
+}
+
+.linkname{
+   font-weight: 600;
+   font-size:48px;
+   color: #4D0F98;
+   margin: 0;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.linkimage{
+   width: 560px;
+   height: 373px;
+   border-radius: 30px;
+   border: #ED139E solid 2px;
+}
+
+.linknamesmall{
+   font-size: 32px;
+   color: #4D0F98;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   margin-top: 20px;
+}
+
+.arrowlongleft{
+   cursor: pointer;
+}
+
+.arrowlongleft:hover{
+   content: url('Мурляндия/Arrow\ left\ long\ 2.png');
+}
+
+.arrowlongleft:active{
+   content: url('Мурляндия/Arrow\ left\ long\ 3.png');
+}
+
+.arrowlongright{
+   cursor: pointer;
+}
+
+.arrowlongright:hover{
+   content: url('Мурляндия/Arrow\ right\ long\ 2.png');
+}
+
+.arrowlongright:active{
+   content: url('Мурляндия/Arrow\ right\ long\ 3.png');
+}
+
+.name{
+   display: flex;
+   flex-direction: row;
+   width: 70%;
+}
+
+.name-title{
+   color: #4D0F98;
+   font-family: 'Oswald', sans-serif;
+   font-size: 64px;
+   margin: 0;
+   white-space: nowrap
+}
+
+.project-description-mur{
+   width: 60%;
+   display: flex;
+   flex-direction: row;
+   margin-top: 75px;
+}
+
+.text-sec{
+   min-width: 560px;
+}
+
+.projabout{
+   font-weight: 600;
+   font-size:48px;
+   color: #4D0F98;
+   margin: 0;
+}
+
+.textabout{
+   font-size:24px;
+   color: #B292F6;
+}
+
+.rectangle {
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 10px;
+   width: 1460px;
+   height: 2px;
+   background-color: #ED139E; 
+   justify-content: center;
+   align-items: center;
+}
+
+.teamlink{
+   font-size:24px;
+   color: #4D0F98;
+   margin: 0;
+   margin-bottom: 12px;
+   cursor: pointer;
+}
+
+
+.teamlink:hover {
+   color: #B292F6;
+}
+
+.teamlink:active {
+   color: #27074D;
 }
 
 a{
-    text-decoration: none
+   text-decoration: none;
 }
-
 
 a:hover {
-    color: #1073D8
+   color: #B292F6;
 }
 
-
-a:visited {
-    color:#73A7DA;
-    text-decoration: none
+a:active {
+   color: #27074D;
 }
-
-
-
-
-
-
-
-

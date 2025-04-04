@@ -1,0 +1,20 @@
+
+
+.images{
+    margin: 0;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+}
+
+.leftimage{
+    display: flex;
+    flex-direction: column;
+}
+
+.murimage{
+    width: 676px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+

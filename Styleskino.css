@@ -1,0 +1,40 @@
+
+
+.images{
+    margin: 0;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+}
+
+.leftimage{
+    display: flex;
+    flex-direction: column;
+}
+
+.kinoimage{
+    width: 676px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.rowone{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    justify-content: center;
+    justify-items: center;
+    gap: 194px;
+}
+
+#kino1:hover{
+    content: url('Кинобар/товары 2.png');
+}
+
+#kino2:hover{
+    content: url('Кинобар/галерея 2.png');
+}
+#kino3:hover{
+    content: url('Кинобар/фестивали 2.png');
+}
