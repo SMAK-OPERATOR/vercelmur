@@ -1,0 +1,85 @@
+.titles{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+#mainClound{
+    background-image: url("Картинки/облачко_синее.png") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:50% 20%;
+    text-align: center;
+    background-size: 1020px 500px;
+}
+
+.mainInfo{
+    display: flex;
+    align-items: flex-end;
+    align-content: space-evenly;
+    justify-content:space-between;
+    height: 970px;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    align-content: space-around;
+    justify-content:flex-start;
+    font-family: Typey McTypeface;
+    font-size: 20px;
+    color:#F5B2CE;
+    height: 202px;
+    width: 1903px;
+    background-color: #897FA9;
+    text-align: right;
+}
+
+a:hover {
+    color: #1073D8
+}
+
+#bodyMargins{
+    margin: 0;
+}
+
+#titleSection{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content:space-around;
+    grid-gap:2em;
+}
+#becametext{
+    font-family: Aubrey Pro;
+    font-size: 40px;
+    color:#FF77B5;
+}
+#becametext:hover{
+    color:#fd308c;
+}
+
+.titleText {
+    font-family: Aubrey Pro;
+    font-size: 26px;
+    color:#73A7DA;
+}
+
+#bodyMargins{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+

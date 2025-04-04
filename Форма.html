@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Мурляндия – Гражданство</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Styles_form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body id="bodyMargins">
+    <header class="titleText container">
+        <div class="row" id="mainClound" style="padding-bottom: 2em;">
+            <a class="col-2" style="margin-top: 2em; text-decoration: none;" href=""><p>Новости</p></a>
+            <a class="col-2" style="text-decoration: none; margin-top: 2em;" href="Представители.html"><p>Представители</p></a>
+            <a class="col-4 scaleclass" style="text-decoration: none; margin-top: 2.1em;" href="index.html"><p style="font-size: 50px; color:#FF77B5;">Мурляндия</p></a>
+            <p class="col-4" style="color: #1073D8; margin-top: 2em;">Стать гражданином Мурляндии</p>
+        </div>
+    </header> 
+    <main class="titleText container-fluid" style="margin-top: 1em;">
+        <div style="color: #1073D8; margin-left: 13em">
+            <p class="col" style="font-size: 40px;">Заявка на получение гражданства</p>
+            <p style="font-size: 30px;">Введите свои данные для подачи заявки</p>
+        </div>
+        <div class="row">
+            <div class="col-3" style="margin-top: 2em; margin-left: 13em;">
+                <label for="exampleFormControlInput1" class="form-label">Введите свое имя</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Мяудрей" style="color:#1073D8; font-size: 26px; height: 50px;width: 368px;">
+                <label for="exampleFormControlInput1" class="form-label" style="margin-top: 1.5em;">Введите свою фамилию</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Мурзев" style="color:#1073D8; font-size: 26px; height: 50px;width: 368px;">
+                <label for="exampleFormControlInput1" class="form-label" style="margin-top: 1.5em;">Введите свое отчество</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Мявятонович" style="color:#1073D8; font-size: 26px; height: 50px;width: 368px;">
+                <div class="mb-3 form-check" style="margin-top: 1.5em;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="show_popap('modal-1')">
+                    <label class="form-check-label" for="exampleCheck1" ><nobr>Я обязуюсь соблюдать <a style="color: #1073D8;">законы Мурляндии</a></nobr></label>
+                </div>
+                <button type="submit" class="btn btn-primary buttonst" onclick="show_popap('modal-2')"
+                    style="background-color: #D4E9FD; 
+                    border-radius: 8px;
+                    border: 3px solid #1073D8;
+                    width: 368px;
+                    height: 72px;
+                    margin-top: 1em;
+                    font-size: 26px;
+                    color: #1073D8;">
+                    Отправить
+                </button>
+            </div>
+            <div class="col-3"  style="margin-top: 2em; margin-left: 1em;">
+                <label for="exampleFormControlInput1" class="form-label">Введите свою дату рождения</label>
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Мяудрей" style="color:#1073D8; font-size: 26px;height: 50px;width: 368px;">
+                <label for="exampleFormControlInput1" class="form-label" style="margin-top: 1.5em;">Введите свою электронную почту</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Murland@mew.com" style="color:#1073D8; font-size: 26px;height: 50px;width: 368px;">
+            </div>
+            <div class="col"  style="margin-left: -2em;">
+                <img src="Картинки/кот1.png" alt="кот 1" height="711">
+            </div>
+        </div>
+    </main>
+    <footer class="footerText">
+        <div class="container">
+            <div class="row">
+                <section class="col" id="footergridbox1" style="margin-left: 2em; margin-top: 7em;">
+                    <div>
+                        <img src="Картинки/vk_logo.png" alt="vk" height="30">
+                        <img src="Картинки/youtube_logo.png" alt="youtube" height="30">
+                        <img src="Картинки/discord_logo.png" alt="discord" height="30">
+                    </div>
+                </section>
+                <div class="col" style="text-align: right; margin-top: 1em;">
+                    <p>
+                        Все события и герои вымышлены <br>
+                        Любые совпадения с реальными личностями случайны <br>
+                        Все изображение кошек тщательно защищены от растягивания
+                    </p>
+                    <p style="margin-top: 2em;">Designed by Andrey Kniazev &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="overlay" id="modal-2">
+        <div class="flex-popap">
+          <div class="popap titleText">
+            <div style="text-align: center; color: #FF77B5;">
+                <p style="font-size: 40px;">Поздравляем с успешной подачей заявки!</p>
+                <p style="font-size: 30px;">Мы свяжимся с вами в ближайшее время.</p>
+                <a href="index.html">
+                    <button type="submit" class="btn btn-primary buttonst close_popap"
+                    style="background-color: #D4E9FD; 
+                    border-radius: 8px;
+                    border: 3px solid #1073D8;
+                    width: 422px;
+                    height: 72px;
+                    margin-top: 1em;
+                    font-size: 26px;
+                    color: #1073D8;">
+                    Перейти на главную страницу
+                    </button>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="overlay2" id="modal-1">
+        <div class="flex-popap2">
+          <div class="popap2 titleText">
+            <div style="text-align: center; color: #1073D8;" class="container">
+                <p style="font-size: 40px;">Краткий свод законов Мурляндии</p>
+                <article class="row" id="rules" style="margin-left: 2em;">
+                       <p class="col">1. Закон о праве на безопасность: гарантируются безопасность и защита всех кошек в Мурляндии. Запрещается жестокое обращение, насилие или ущемление прав кошек.</p> 
+                       <p>2. Закон об обязательной идентификации: все кошки, проживающие в Мурляндии, должны быть чипированы 
+                        и зарегистрированы в специальном реестре для обеспечения контроля популяции и ответственного владения.</p> 
+                       <p>3. Закон о защите от бродячих кошек: предусматривает программы по контролю и уходу за бродячими кошками, их стерилизацию и внедрение помощи им в поиске дома.</p> 
+                       <p>4. Закон о санитарных стандартах: определяет правила 
+                        по осуществлению регулярных медицинских осмотров, вакцинации и гигиене кошек для поддержания 
+                        их здоровья и благополучия.</p> 
+                       <p>5. Закон о свободе передвижения: кошкам в Мурляндии присваивается право свободно перемещаться 
+                        по территории страны, осуществлять свои естественные поведенческие акты и наслаждаться пространством своего обитания.</p> 
+                       <p>6. Закон о защите природы: предоставляет особую охрану природным экосистемам, где обитают кошки, запрещая загрязнение и разрушение их среды обитания.</p> 
+                       <p>7. Закон о праве на отдых и отдыхе: кошкам в Мурляндии предоставляется право на спокойствие и отдых, поэтому владельцы должны обеспечивать безопасные 
+                        и комфортные места для отдыха и расслабления своих питомцев.</p> 
+                       <p>8. Закон о праве на котомыслие: признает уникальность 
+                        и индивидуальность котов в Мурляндии и запрещает 
+                        их использование, эксперименты или другие действия, которые нарушают их естественную природу 
+                        и поведение.</p> 
+                       <p>9. Закон о праве на питание: устанавливает, что кошки должны иметь доступ к питательной 
+                        и сбалансированной пище, соответствующей их пищевым потребностям, и запрещает использование пищевых продуктов, которые представляют угрозу для 
+                        их здоровья.</p> 
+                       <p>10. Закон о ответственности владельцев: обязывает владельцев кошек в Мурляндии быть ответственными
+                        и заботливыми, обеспечивать своим питомцам достойные условия содержания, медицинскую помощь и любовь. Запрещается бросать, избивать или наносить вред кошкам.</p> 
+                       <p>11. Закон о поощрении отношений кошек и людей: поощряет и поддерживает позитивное взаимодействие между кошками и людьми, оказывая защиту 
+                        от жестокого или неправильного обращения с кошками.</p> 
+                       <p>12. Закон о праве на образование: предусматривает программы и ресурсы для обучения и развития кошек 
+                        в Мурляндии в соответствии с их способностями 
+                        и потребностями.</p> 
+                </article>
+                <button type="submit" class="btn btn-primary buttonst close_popap"
+                style="background-color: #D4E9FD; 
+                border-radius: 8px;
+                border: 3px solid #1073D8;
+                width: 422px;
+                height: 72px;
+                margin-top: 1em;
+                font-size: 26px;
+                color: #1073D8;">
+                С законами ознакомлен
+                </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

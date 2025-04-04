@@ -1,0 +1,119 @@
+
+.titleText {
+  font-family: Aubrey Pro;
+  font-size: 26px;
+  color:#73A7DA;
+}
+
+#bodyMargins{
+  margin: 0;
+}
+
+.scaleclass:hover {
+    transform: scale(1.1);
+}
+
+.footerText {
+    font-family: Typey McTypeface;
+    font-size: 20px;
+    color: #F5B2CE;
+    height: 202px;
+    width: 1903px;
+    background-color: #897FA9;
+}
+
+#mainClound {
+    background-image: url("Картинки/облачко_синее.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    background-size: 390px 190px;
+
+}
+
+input[type="email"] {
+    color: #73A7DA;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #73A7DA;
+}
+
+input[type="email"]::-moz-placeholder {
+    color: #73A7DA;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+#rules{
+    font-size: 24px; 
+    max-width: 719px; 
+    max-height: 523px; 
+    text-align: left; 
+    border-radius: 20px; 
+    border: solid 3px #1073D8; 
+    padding: 13px 3px 39px 25px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    display: none;
+  }
+  .overlay.active {
+    display: block;
+  }
+  .overlay .flex-popap {
+    width: 900px;
+    height: 326px;
+    margin-top: 20%;
+    margin-left: 30%;
+  }
+  .overlay .flex-popap .popap {
+    position: relative;
+    background-color: #fff;
+    border: solid 3px #1073D8;
+    border-radius: 20px;
+    padding: 41px 27px;
+    overflow: auto;
+  }
+
+
+  .overlay2 {
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    display: none;
+  }
+  .overlay2.active {
+    display: block;
+  }
+  .overlay2 .flex-popap2 {
+    width: 909px;
+    height: 862px;
+    margin-top: 2%;
+    margin-left: 30%;
+  }
+  .overlay2 .flex-popap2 .popap2 {
+    position: relative;
+    background-color: #fff;
+    border: solid 3px #1073D8;
+    border-radius: 20px;
+    padding: 41px 27px;
+    max-width: 909px;
+    max-height: 862px;
+  }
